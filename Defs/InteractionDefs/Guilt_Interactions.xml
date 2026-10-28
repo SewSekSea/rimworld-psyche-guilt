@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    Telling someone. Only happens when the speaker is genuinely carrying something.
+    It lifts the weight for them, and costs them the listener's good opinion.
+  -->
+  <InteractionDef>
+    <defName>GU_Confess</defName>
+    <label>confess</label>
+    <workerClass>Guilt.InteractionWorker_Confess</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/DeepTalk</symbol>
+    <recipientThought>GU_KnowsWhatTheyDid</recipientThought>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [confessed] [RECIPIENT_nameDef] [what].</li>
+
+        <li>confessed(p=3)->admitted to</li>
+        <li>confessed->finally told</li>
+        <li>confessed->unburdened themselves to</li>
+        <li>confessed->quietly owned up to</li>
+
+        <li>what->what they had done</li>
+        <li>what->what happened, and their part in it</li>
+        <li>what->the whole of it, without excuses</li>
+        <li>what->something they had not said out loud before</li>
+        <li>what->more than they meant to</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+</Defs>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Guilt</name>
+  <author>T&amp;B Modding</author>
+  <packageId>guilt.conscience</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>The executions are yours. Your colonists carry them.
+
+In the base game, ordering a prisoner executed costs the colonist who did it a small mood penalty for a few days, and then it is gone. Harvesting organs is much the same. Nothing accumulates. Nobody is ever changed by what you asked of them.
+
+A conscience that keeps the account
+- Executions, organ harvesting, butchering people, selling prisoners, banishing someone to die and killing one of your own all leave a weight.
+- Doing a thing weighs far more than knowing it was done.
+- The weight fades slowly, about half over three or four weeks. It does not vanish.
+- As it builds: "something I did", then "things I've done", then "I don't recognise myself".
+
+Can't look at them
+- A colonist who killed someone cannot be around that person's close family. The guilt points outwards as a lower opinion of the bereaved.
+
+Confession
+- A colonist carrying enough will quietly tell someone they trust. It lifts a good share of the weight.
+- But now that person knows, and thinks less of them for a while. It is a real trade, not a free cure.
+- They never confess to the family of the person they wronged.
+
+Callousing
+- Past a certain point a colonist stops feeling it. You get a letter when it happens, and a mark in their health tab.
+- They still know what they did. It no longer reaches them, and it will not reach them next time either.
+
+Psychopaths and the bloodlusting never feel any of this. Neither do Sociopaths, for anyone outside their inner circle, if you run that mod.
+
+This mod only changes how colonists feel. It never changes how anyone aims, works or chooses a job.
+
+Requires Harmony. Safe to add to an existing save. RimWorld 1.6, no DLC needed.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+    <li>sociopath.trait</li>
+    <li>machiavelli.trait</li>
+    <li>squad.morale</li>
+    <li>squad.ptsd</li>
+    <li>grief.mourning</li>
+  </loadAfter>
+</ModMetaData>

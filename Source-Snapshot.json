@@ -1,0 +1,81 @@
+{
+  "name": "Guilt",
+  "packageId": "guilt.conscience",
+  "assemblyName": "Guilt",
+  "repositoryName": "rimworld-psyche-guilt",
+  "workshopId": "3805091476",
+  "metadataVersions": [
+    "1.6",
+    "1.7"
+  ],
+  "originalSourceUnit": "Psyche Mods/Guilt",
+  "sourceSnapshotUtc": "2026-10-28T17:10:12.200Z",
+  "sourceFileFingerprints": [
+    {
+      "path": "About/About.xml",
+      "sha256": "7922E0D84A3424219ABC1EEAF1899A5508681767B2EAB92AEBF7DB7CED1C678A",
+      "bytes": 2439
+    },
+    {
+      "path": "About/Preview.png",
+      "sha256": "F219B0BAE0FB5BB5A86BE51DC267D4A4799941D17B7DDC4DAED353D8CE77EC8D",
+      "bytes": 164255
+    },
+    {
+      "path": "About/PublishedFileId.txt",
+      "sha256": "71146ECFEC8511DD8821DF3C9BFCBB1E099A3A5F0F9B513917EFFF15EFE8A731",
+      "bytes": 10
+    },
+    {
+      "path": "Defs/HediffDefs/Guilt_Hediffs.xml",
+      "sha256": "A39657304AE281D79D6BDC02F0BD6901407A5125221D59323AABC5371BAA970B",
+      "bytes": 801
+    },
+    {
+      "path": "Defs/InteractionDefs/Guilt_Interactions.xml",
+      "sha256": "C531B992AB79D26133AFB6F4DC511426CDC585FE8CE3E7CF23DFD2A87AED7C4D",
+      "bytes": 1152
+    },
+    {
+      "path": "Defs/ThoughtDefs/Guilt_Thoughts.xml",
+      "sha256": "BD128ACBFADF225B279D3B02EBF27F5223976C8A43CF3722D5DDED11F4522442",
+      "bytes": 3852
+    },
+    {
+      "path": "Source/Guilt/Conscience.cs",
+      "sha256": "53F8B9F4EEE7E4BA93D064F7D7E2B7635D28BDF64182AE6E0F35804E040E191B",
+      "bytes": 8282
+    },
+    {
+      "path": "Source/Guilt/Guilt.csproj",
+      "sha256": "B9BA668588FCEE2109C4D6623F56C58D217F5AC2F7B14ACE60ABD1A07BEA303A",
+      "bytes": 1625
+    },
+    {
+      "path": "Source/Guilt/GuiltCore.cs",
+      "sha256": "D61077B079F700C12E4C09F689D419956F227F87814C6F30F5807604B08C7FAF",
+      "bytes": 10783
+    },
+    {
+      "path": "Source/Guilt/HarmonyPatches.cs",
+      "sha256": "BC221D0E1B82DC3891AD8C035AB88D1BF4615A18F6549EE7BA6FADDEEAA42A70",
+      "bytes": 6290
+    },
+    {
+      "path": "Source/Guilt/Settings.cs",
+      "sha256": "4EDDEB992C93EC261C4EEF91E52D0A7E214A4D7FDAD301574A87221A83F245DA",
+      "bytes": 4105
+    },
+    {
+      "path": "Source/Guilt/Workers.cs",
+      "sha256": "60A81D35D70BDC610C667FADFEFFAB7FE5E9E34BB27F169F72C850D5D85EB03E",
+      "bytes": 4337
+    }
+  ],
+  "stagedProjectAdjustments": [],
+  "build16": "NOT_RUN_THIS_PASS",
+  "build17": "COMPILED_AGAINST_LOCAL_1.7_API",
+  "nativePlaytest": "NOT_RUN_THIS_PUBLICATION_PASS",
+  "gameplaySourceModified": false,
+  "compiled17SHA256": "B16AC0E4E0FB185E64F3375CB6092D866D8FA9BBAD64E9D0B22EB17280448B25"
+}

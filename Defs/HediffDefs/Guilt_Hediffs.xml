@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    Marks a colonist whose conscience has stopped keeping the account. Visible in the health tab
+    so the player can always see who has crossed that line. It does nothing on its own; the
+    behaviour lives in the mod's code.
+  -->
+  <HediffDef>
+    <defName>GU_Calloused</defName>
+    <label>calloused</label>
+    <description>This person has done enough that it no longer registers properly. They still know what they did. It simply does not reach them the way it used to.</description>
+    <hediffClass>Hediff</hediffClass>
+    <isBad>true</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>1.0</initialSeverity>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+</Defs>

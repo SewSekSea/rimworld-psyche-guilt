@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    The conscience. A single situational thought whose stage comes from the weight of what
+    this colonist has done, added up and allowed to fade. Doing a thing counts for much more
+    than knowing it was done. Psychopaths and the bloodlusting are nullified out entirely,
+    and the Sociopath mod's selective empathy already stops most of the source thoughts
+    reaching the ledger in the first place.
+  -->
+  <ThoughtDef>
+    <defName>GU_Conscience</defName>
+    <thoughtClass>Guilt.Thought_Conscience</thoughtClass>
+    <workerClass>Guilt.ThoughtWorker_Conscience</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>something I did</label>
+        <description>It was necessary. I keep telling myself that, which is how I know it is still bothering me.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>things I've done</label>
+        <description>There is a list now. I did not set out to have a list.</description>
+        <baseMoodEffect>-9</baseMoodEffect>
+      </li>
+      <li>
+        <label>I don't recognise myself</label>
+        <description>Whoever it is that does these things, it cannot still be me. I would not have done this once.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Past the point where it still registers. -->
+  <ThoughtDef>
+    <defName>GU_Calloused</defName>
+    <workerClass>Guilt.ThoughtWorker_Calloused</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>nothing much reaches me</label>
+        <description>I did it, and I waited to feel something about it, and nothing came. I am not sure when that started.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Guilt pointed outwards: they cannot be around the family of someone they killed. -->
+  <ThoughtDef>
+    <defName>GU_CantLookAtThem</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>Guilt.ThoughtWorker_CantLookAtThem</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Adult</developmentalStageFilter>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>can't look at them</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Having told someone. A weight off, for a while. -->
+  <ThoughtDef>
+    <defName>GU_Confessed</defName>
+    <durationDays>12</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.7</stackedEffectMultiplier>
+    <showBubble>true</showBubble>
+    <stages>
+      <li>
+        <label>told someone</label>
+        <description>I said it out loud to another person and they did not walk away. It is not absolution, but I slept.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- And the cost of telling them: the listener now knows. -->
+  <ThoughtDef>
+    <defName>GU_KnowsWhatTheyDid</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>40</durationDays>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>2</stackLimitForSameOtherPawn>
+    <stackedEffectMultiplier>0.8</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>I know what they did</label>
+        <baseOpinionOffset>-14</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
